@@ -28,7 +28,7 @@ for i in infile:
         if i[4] == "CSR":
             new = int(i[5])*1.1
             new = format(new, ",.2f")
-            dict[f"{i[1]} {i[2]}"] = [new]
+            dict[f"{i[1]} {i[2]}"] = new
             print(
                 f"Manager Name: {i[1]} {i[2]} Current Salary: ${format(float(i[5]), ',.2f')}")
 
@@ -42,5 +42,5 @@ print()
 # iternate through the dictionary and print out the key and value as per printout
 
 for i in dict:
-    print(f"Manager Name: {i} New salary: ${dict[i][0]}")
+    print(f"Manager Name: {i} New salary: ${dict[i]}")
 print()

@@ -19,6 +19,7 @@ infile = csv.reader(infile)
 # create an empty dictionary
 
 dict = {}
+print()
 
 # use a loop to iterate through the csv file
 
@@ -41,4 +42,5 @@ print()
 # iternate through the dictionary and print out the key and value as per printout
 
 for i in dict:
-    print(f"Manager Name: {i} New Salary: ${dict[i][0]}")
+    print(f"Manager Name: {i} New salary: ${dict[i][0]}")
+print()
